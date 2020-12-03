@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-
-  <style>
-  body {
-    background-color: orange;
-  }
-  </style>
     <!-- Used by keyboard -->
     <meta charset="utf-8">
 
@@ -30,40 +24,79 @@
     <!-- meta http-equiv="content-type" content="text/html; charset=UTF-8" -->
     <!-- Already specified in the charset above-->
 
-<style>  div {border: thin dotted black;} */ </style>
+
+    <style>
+          * {
+            box-sizing: border-box;
+          }
+
+          .header {
+            border: 1px solid red;
+            padding: 15px;
+          }
+
+          .menu {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+          }
+
+          .main {
+            width: 50%;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+          }
+
+          .right {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+          }
+
+          .footer {
+            border: 1px solid red;
+            padding: 15px;
+          }
+        </style>
+
+
+  <style>
+  body {
+    background-color: orange;
+  }
+  </style>
 
   </head>
-  <header><h1 style="font-size:5.5vw">Learning HTML</h1></header>
+  <div class="header"><header><h1 style="font-size:5.5vw">Learning HTML</h1></header>
       <h2 style="font-size:2.5vw">Navigation with no viewport in h2</h2>
+  </div>
   <body>
-      <aside><p>This is the aside space with no viewport.</p></aside>
+      <div class="menu"><aside><p>This is the aside space with no viewport.</p></aside></div>
         <article>
+          <div class="aside">
           <p style="font-size:1vw">Practice Hyperlinks</p>
           <ol style="font-size:1vw" type="A">
-            <li style="font-size:1.5vw"><a href="childPages\MetaData.html" target="_self">MetaData</a>
-            <li style="font-size:1.5vw"><a href="childPages\Image.html" target="_self">Image</a>
-            <li style="font-size:1.5vw"><a href="childPages\childTemplate.html" target="_self">childPages template</a>
-            <li style="font-size:1.5vw"><a href="childPages\Exp H1-H6 P.html" target="_self">Headings and Paragraph Tags</a>
-            <li style="font-size:1.5vw"><a href="childPages\Exp Sub and Superscript.html" target="_self">Subscript and Superscript Tags</a>
-            <li style="font-size:1.5vw"><a href="childPages\Exp DIVs.html" target="_self">Laying out DIVs</a>
+            <li style="font-size:0.5vw"><a href="childPages\MetaData.html" target="_self">MetaData</a>
+            <li style="font-size:0.5vw"><a href="childPages\Image.html" target="_self">Image</a>
+            <li style="font-size:0.5vw"><a href="childPages\childTemplate.html" target="_self">childPages template</a>
+            <li style="font-size:0.5vw"><a href="childPages\Exp H1-H6 P.html" target="_self">Headings and Paragraph Tags</a>
+            <li style="font-size:0.5vw"><a href="childPages\Exp Sub and Superscript.html" target="_self">Subscript and Superscript Tags</a>
+            <li style="font-size:0.5vw"><a href="childPages\Exp DIVs.html" target="_self">Laying out DIVs</a>
           </ol>
-        <section>
+        </article>
+          </div>
+        <div class="main"><section>
           <h3 style=font-size:"2.5vw">Section 1</h3>
           <h2><p>Paragraphs</p><h2>
-        </article>
-      </section>
-      <section>
-        <h3>Section 1</h3>
-        <article>
-          <p>This is article 1 in section 1.</p>
-        </article>
-        <article>
-          <p>This is article 2 in section 1.</p>
-        </article>
-      </section>
+        </section>
+      <br><br>
+        </div>
   </body>
 
-
+    <div class="footer">
   <footer>
     <blockquote cite="https://www.brainyquote.com/quotes/helen_keller_101301?src=t_inspirational">
       <!-- Date Accessed 20201120 -->
@@ -77,5 +110,5 @@
   <p>&copy Edward Kim, powered by Edward146 in GitHub</p>
 
   </footer>
-
+    </div>
 </html>
